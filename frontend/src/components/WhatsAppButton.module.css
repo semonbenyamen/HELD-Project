@@ -1,0 +1,14 @@
+.button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #1fae63;
+  color: white;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 30px rgba(31,174,99,.28);
+  z-index: 30;
+}

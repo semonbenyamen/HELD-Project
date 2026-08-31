@@ -1,0 +1,83 @@
+.page {
+  padding: 84px 0;
+}
+
+.eyebrow {
+  display: block;
+  color: var(--green);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  margin-bottom: 14px;
+}
+
+.page h1 {
+  font-size: clamp(2rem,4vw,3.5rem);
+  letter-spacing: -.03em;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(5,1fr) auto;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+  margin: 28px 0 18px;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  padding: 12px 13px;
+  outline: none;
+}
+
+.searchField {
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.searchField input {
+  border: 0;
+}
+
+.results {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .filters {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .page {
+    padding: 58px 0;
+  }
+
+  .grid,
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}

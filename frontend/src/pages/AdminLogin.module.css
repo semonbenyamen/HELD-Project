@@ -1,0 +1,67 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  background: var(--soft);
+}
+
+.card {
+  width: min(430px,100%);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: "Manrope";
+  font-weight: 800;
+  margin-bottom: 26px;
+}
+
+.brandIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: var(--green);
+  color: white;
+}
+
+.lockIcon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #eaf4f0;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+.card h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.card input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  padding: 12px 13px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: var(--danger);
+  margin-top: 10px;
+  font-size: .9rem;
+}
